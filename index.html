@@ -40,27 +40,35 @@
 <p>Tips are added to /value/mrtips_array.xml following this pattern :</p>
 
 <pre><code>
-<ressource>
+&lt;ressource&gt;
   ..
-  <array name="id">
-        <item>title label resource id in string.xml file(optional, but empty if n/a)</item>
-        <item>image name (without extension)</item>
-        <item>description label resource id string.xml file</item>
-        <item>checkbox label resource id string.xml file</item>
-  </array>
+  &lt;array name=&quot;id&quot;&gt;
+        &lt;item&gt;title label resource id in string.xml file(optional, but empty if n/a)&lt;/item&gt;
+        &lt;item&gt;image name (without extension)&lt;/item&gt;
+        &lt;item&gt;description label resource id string.xml file&lt;/item&gt;
+        &lt;item&gt;checkbox label resource id string.xml file&lt;/item&gt;
+  &lt;/array&gt;
   ..
-<ressources>
+&lt;ressources&gt;
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>You can add as many tips as you want. You must keep these four items order for each array.
 
-<h3>Designer Templates</h3>
+Title label :
+Title label optional but the first "item" tag is required. So put an empty "item" tag if you don't want any title label.
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+Images :
+To display an image on the popup, you just need to add the .png-file to /drawable and write the name of the image (without extension). 
 
-<h3>Rather Drive Stick?</h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+For more code example, checkout this gist :
+http://gist.github.com/586709
+</p>
+        
+  <b>Feedback</b>
+
+Feel free to contact me and give some feedback !
+tezan.enssat@gmail.com
 
 <h3>Authors and Contributors</h3>
 
