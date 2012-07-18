@@ -29,11 +29,27 @@
       <section>
         <h3>MrTips, help popups for Android made easy</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+        <b>Getting started</b>
+<p>1. Download mrtipsX.Y.jar (in /build folder) and add it to your build path
+  OR add mrtips.* package into your project.</p>
+<p>2. Add mrtips_array.xml to /value (in /example/res/value)</p>
+<p>3. instanciate a TipsDisplayer passing a string array initialized with the tips id list (cf. MrTipsExample activity in /example/src).</p>
+<p>4. call showTipsDialog on the TipsDisplayer.</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+       <b>Tips declaration</b>
+<p>Tips are added to /value/mrtips_array.xml following this pattern :</p>
+
+<pre><code>
+<ressource>
+  ..
+  <array name="id">
+        <item>title label resource id in string.xml file(optional, but empty if n/a)</item>
+        <item>image name (without extension)</item>
+        <item>description label resource id string.xml file</item>
+        <item>checkbox label resource id string.xml file</item>
+  </array>
+  ..
+<ressources>
 </code></pre>
 
 <p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
